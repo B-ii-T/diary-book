@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+header{
+    transition: 0.5s;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 75px;
+    background: #2E2D2D;
+}
+
+header img{
+    transition: 0.5s;
+    margin-left: 18px;
+    left: 0;
+    width: 49px;
+    height: 49px;
+}
+
+header ul{
+    transition: 0.5s;
+    right: 0;
+    position: absolute;
+    list-style-type: none;
+    color: white;
+    display: block;
+}
+
+header ul li{
+    transition: 0.5s;
+    cursor: default;
+    margin-left: 15px;
+    margin-right: 41px;
+    font-size: 25px;
+    display: inline;
+    margin-top: 21px;
+}
+
+header ul li:hover{
+    transition: 0.5s;
+    color: #FF00A1;
+}
+
+#strip{
+    transition: 0.5s;
+    width: 200px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    margin-left: 50px;
+}
+
+#title{
+    transition: 0.5s;
+    text-shadow: #0000003b 10px 10px 20px;
+    font-size: 30pt;
+    position: absolute;
+    margin-left: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#title h1:first-child{
+    transition: 0.5s;
+    transform: translateY(-120%);
+    position: absolute;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#title h1:last-child{
+    transition: 0.5s;
+    position: absolute;
+    padding: 0;
+    margin-top: 0;
+    transform: translateX(35%);
+}
+
+#pen_section{
+    transition: 0.5s;
+    align-items: center;
+    margin-right: 600px;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    transform: translateY(-50%);
+}
+
+#pen_bg{
+    transition: 0.5s;
+    position: absolute;
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+}
+
+#pen{
+    transition: 0.5s;
+    transform: translateX(5%) translateY(-10%);
+    position: absolute;
+    z-index: 2;
+    widows: 100px;
+    height: 600px;
+}
+
+h2{
+    text-shadow: #0000003b 10px 10px 20px;
+    cursor: default;
+    transition: 0.5s;
+    left: 0;
+    top: 70%;
+    transform: translateX(10%);
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 77px;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    color: white;
+    background: linear-gradient(to bottom, #FF00A1, #800051);
+}
+
+p{
+    text-shadow: #0000003b 10px 10px 20px;
+    transition: 0.5s;
+    font-family: 'Gochi Hand', cursive;
+    display: block;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    margin-bottom: 150px;
+    right: 0;
+    transform: translateX(-70%) translateY(150%);
+    text-align: right;
+}
