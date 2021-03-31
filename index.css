@@ -9,6 +9,7 @@ body{
 }
 
 header{
+    top: 0;
     transition: 0.5s;
     align-items: center;
     display: flex;
@@ -51,6 +52,8 @@ header ul li:hover{
 }
 
 #strip{
+    /* box-shadow: #0000003b 10px 10px 10px; */
+    user-select: none;
     transition: 0.5s;
     width: 200px;
     height: 600px;
@@ -60,6 +63,7 @@ header ul li:hover{
 }
 
 #title{
+    color: #2E2D2D;
     transition: 0.5s;
     text-shadow: #0000003b 10px 10px 20px;
     font-size: 30pt;
@@ -75,6 +79,11 @@ header ul li:hover{
     position: absolute;
     margin-bottom: 0;
     padding: 0;
+}
+#title:hover h1:last-child{
+    transition: 0.5s;
+    transform: translateX(-0.1%);
+    color: #FF00A1;
 }
 
 #title h1:last-child{
@@ -96,6 +105,7 @@ header ul li:hover{
 }
 
 #pen_bg{
+    user-select: none;
     transition: 0.5s;
     position: absolute;
     z-index: 1;
@@ -104,6 +114,7 @@ header ul li:hover{
 }
 
 #pen{
+    user-select: none;
     transition: 0.5s;
     transform: translateX(5%) translateY(-10%);
     position: absolute;
@@ -112,7 +123,11 @@ header ul li:hover{
     height: 600px;
 }
 
-h2{
+button{
+    border: none;
+    outline: none;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.5em;
     text-shadow: #0000003b 10px 10px 20px;
     cursor: default;
     transition: 0.5s;
@@ -131,6 +146,13 @@ h2{
     color: white;
     background: linear-gradient(to bottom, #FF00A1, #800051);
 }
+button:hover{
+    transition: 0.5s;
+    font-size: 2em;
+    background: white;
+    color: #FF00A1;
+    border: 3px solid #FF00A1;
+}
 
 p{
     text-shadow: #0000003b 10px 10px 20px;
@@ -144,4 +166,166 @@ p{
     right: 0;
     transform: translateX(-70%) translateY(150%);
     text-align: right;
+}
+
+@media screen and (max-width: 1260px){
+
+    #title:hover h1:last-child{
+        transition: 0.5s;
+        color: #FF00A1;
+    }
+    
+    #title h1:last-child{
+        transition: 0.5s;
+        position: absolute;
+        padding: 0;
+        margin-top: 0;
+        transform: translateX(0%);
+    }
+
+    button{
+        border: none;
+        outline: none;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 1.5em;
+        text-shadow: #0000003b 10px 10px 20px;
+        cursor: default;
+        transition: 0.5s;
+        left: 0;
+        top: 70%;
+        transform: translateX(0%);
+        margin-left: 275px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 77px;
+        position: absolute;
+        text-align: center;
+        width: 300px;
+        height: 80px;
+        color: white;
+        background: linear-gradient(to bottom, #FF00A1, #800051);
+    }
+
+}
+
+@media  screen and (max-width: 1190px){
+
+    #strip{
+        height: 100px;
+        left: 0px;
+        margin-left: 0;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #title{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pen_section{
+        left: 0;
+        margin-left: 25px;
+    }
+
+    p{
+        left: 0;
+        margin-left: 200px;
+    }
+
+    #title{
+        top: 0;
+        margin-top: 300px;
+    }
+
+    button{
+        left: 51%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    body{
+        display: block;
+        align-items: center;
+    }
+
+
+    #pen_section, #pen, #pen_bg{
+        transition: 0s;
+        visibility: hidden;
+    }
+
+    #title{
+        margin: 50px;
+        margin-top: 300px;
+        transform: translateY(50%);
+        display: block;
+    }
+
+    button{
+        margin: 50px;
+        margin-top: 300px;
+        transform: translateY(-300%) translateX(-65%);
+        display: block;
+    }
+
+    p{
+        margin: 50px;
+        margin-top: 300px;
+        transform: translateY(-510%);
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #title{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p{
+        top: 60%;
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        position: fixed;
+    }
+
+    #strip{
+        position: fixed;
+    }
+
+    header{
+        position: fixed;
+    }
+}
+
+@media screen and (max-height: 90%){
+    #title{
+        color: white;
+    }
 }
