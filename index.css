@@ -8,6 +8,7 @@ body{
     font-family: 'Archivo Black', sans-serif;
 }
 
+
 header{
     top: 0;
     transition: 0.5s;
@@ -143,15 +144,21 @@ button{
     text-align: center;
     width: 300px;
     height: 80px;
-    color: white;
     background: linear-gradient(to bottom, #FF00A1, #800051);
 }
-button:hover{
+button a{
+    color: white;
+    text-decoration: none;
+}
+button:hover {
     transition: 0.5s;
     font-size: 2em;
     background: white;
-    color: #FF00A1;
     border: 3px solid #FF00A1;
+}
+button:hover a
+{
+    color: #FF00A1;
 }
 
 p{
