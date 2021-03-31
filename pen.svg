@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="495.696" height="749.503" viewBox="0 0 495.696 749.503">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff00a1"/>
+      <stop offset="1" stop-color="#800051"/>
+    </linearGradient>
+  </defs>
+  <g id="pen" transform="translate(-728.024 309.509) rotate(31)">
+    <g id="pen-2" data-name="pen" transform="translate(832 -861)">
+      <rect id="Rectangle_31" data-name="Rectangle 31" width="70.316" height="785.37" rx="33" fill="url(#linear-gradient)"/>
+      <path id="Path_11" data-name="Path 11" d="M866.722-61.9l33.88-73.82H830.286Z" transform="translate(-830.286 894.047)" fill="url(#linear-gradient)"/>
+    </g>
+    <line id="Line_10" data-name="Line 10" x2="70.316" transform="translate(832.541 -644.104)" fill="none" stroke="#fff7f7" stroke-width="1"/>
+    <rect id="Rectangle_32" data-name="Rectangle 32" width="15.145" height="15.145" transform="translate(903.397 -823.138)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_33" data-name="Rectangle 33" width="19.472" height="286.671" rx="9" transform="translate(910.97 -827.465)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
