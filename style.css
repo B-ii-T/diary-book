@@ -1,0 +1,220 @@
+*
+{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+header
+{
+    background-color: #2E2D2D ;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+header #bit
+{
+    left: 0.7%;
+    position: fixed;
+}
+header img
+{
+    align-self: center;
+    height: 2.2em;
+    transition: 0.5s;
+}
+header:hover img{
+    height: 2.5em;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(255,255,255,0.5));
+}
+
+header .title
+{
+    text-align: center;
+    height: fit-content;
+    display: flex;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 12px auto;
+}
+
+header .title *
+{
+    margin-left: 9px;
+}
+
+#container
+{
+    display: flex;
+    align-items: center;
+    gap: noraml;
+    height: 800px;
+}
+
+#container *
+{
+    margin: auto;
+}
+
+.image-holder *
+{
+    box-shadow: 5px 5px 16px rgba(0,0,0,0.3);
+    height: inherit;
+}
+
+
+.image-holder :nth-child(1){
+    position: absolute;
+    height: 31em;
+    top: 19%;
+    left: 18%;
+    transform: rotate(-16deg);
+    transform-origin: 100% 100%;
+    transition: 0.3s;
+}
+.image-holder:hover :nth-child(1){
+    transform: rotate(-12deg);
+}
+
+.image-holder button{
+    left: 23%;
+    color: honeydew;
+    padding: 12px;
+    border-radius: 16px;
+    transform-origin: 80% 90%;
+    transform: rotate(30deg);
+    position: absolute;
+    transition: 0.5s ;
+    border: none;
+    outline: none;
+    background: grey;
+    transition-delay: 0.8s;
+}
+.image-holder:hover button{
+    left: 19%;
+    transform: rotate(0);
+}
+.image-holder button:hover{
+    transition: 0.3s;
+    background: #FF00A1;
+}
+
+.image-holder :nth-child(3){
+    position: absolute;
+    height: 33em;
+    top: 28%;
+    left: 19%;
+    transform: rotate(16deg);
+    transition: 0.5s;
+    transform-origin: 15% 90%;
+}
+.image-holder:hover :nth-child(3){
+    transform: rotate(12deg) scale(1.05);
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+.inputs-holder 
+{
+    display: grid;
+    z-index: 10;    
+}
+
+.inputs-holder form
+{
+    display: grid;
+    gap: 12%;
+}
+
+::placeholder{
+    color: #FF00A1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0.3;
+}
+
+.inputs-holder .input
+{
+    width: 100%;
+    padding: 6px 10px;
+    margin: auto 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #FF00A1;
+    outline: none;
+    background: transparent;
+    color: #FF00A1;
+    font-size: 1.6em;
+}
+
+.inputs-holder .title{
+    padding-bottom: 5%;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.inputs-holder .sub-title
+{
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0.6;
+    text-align: center;
+    padding: 0 2%;
+}
+
+input[type="checkbox" i]:checked + label:before{
+    background: #FF00A1;
+  }
+.inputs-holder .check{
+    margin: 10px !important;
+    position: relative;
+    height: 1.4em;
+    width: 1.4em;
+}
+.inputs-holder .check{
+}
+
+.inputs-holder button{
+    background: linear-gradient(#FF00A1,#800051);
+    font-weight: bold ;
+    padding: 20px 60px;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50px;
+    outline: none;
+    border: none ;
+}
+
+
+@media only screen and (max-width: 1580px) {
+    /* For half screen: */
+    .image-holder :nth-child(1){
+        height: 18.6em;
+        top: 30%;
+        left: 12%;
+    }
+    .image-holder:hover button{
+        left: 15%;
+    }
+    .image-holder :nth-child(3){
+        height: 19.8em;
+        top: 38%;
+        left: 17%;
+    }
+  }
+
+  @media only screen and (max-width: 1220px) {
+    /* For phone: */
+   .image-holder{
+       display: none;
+   }
+  }
+
+  @media only screen and (max-height: 450px) {
+    /* For  */
+   .image-holder{
+       display: none;
+   }
+  }
