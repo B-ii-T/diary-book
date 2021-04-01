@@ -46,9 +46,14 @@ header ul li{
     margin-top: 21px;
 }
 
-header ul li:hover{
+header ul li a:hover{
     transition: 0.5s;
     color: #FF00A1;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
 }
 
 #strip{
